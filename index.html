@@ -462,12 +462,12 @@
             <div class="subscribe-container">
               <input
                 type="email"
-                name="email"
+                name="subscribe-email"
                 class="subscribe-input"
                 id="subscribe-input"
                 placeholder="E-mail"
               />
-              <button type="submit" class="footer-submit">
+              <button type="submit" class="submit-btn">
                 Підписатися<svg class="tg">
                   <use href="./images/icons.svg#tg"></use>
                 </svg>
@@ -484,6 +484,23 @@
             <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
+        <form action="#" class="modal-form">
+          <h4>Залиште свої дані, ми вам передзвонимо</h4>
+          <label for="name">Ім'я</label>
+          <input type="name" name="name" id="name" />
+          <label for="tel">Телефон</label>
+          <input type="tel" name="tel" id="tel" />
+          <label for="email">Пошта</label>
+          <input type="email" name="email" id="email" />
+          <label for="comment">Коментар</label>
+          <input type="textarea" name="comment" id="comment" />
+          <input type="checkbox" name="check" value="check" />
+          <label for="check"
+            >Погоджуюся з розсилкою та приймаю
+            <a href="#">Умови договору</a></label
+          >
+          <button class="submit-btn">Відправити</button>
+        </form>
       </div>
     </div>
     <script src="./modal.js"></script>

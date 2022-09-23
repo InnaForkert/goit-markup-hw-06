@@ -26,6 +26,7 @@
 h1,
 h2,
 h3,
+h4,
 p,
 b {
   margin: 0;
@@ -545,7 +546,7 @@ img {
   gap: 10px;
 }
 
-.footer-submit {
+.submit-btn {
   display: flex;
   gap: 10px;
   justify-content: center;
