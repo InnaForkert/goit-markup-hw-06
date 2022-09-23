@@ -806,6 +806,12 @@ img {
 .close.btn {
   background-color: transparent;
   border: none;
+  appearance: none;
+}
+
+.close:hover,
+.icon. close:focus {
+  fill: var(--accent);
 }
 
 /* modal form */
