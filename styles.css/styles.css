@@ -517,6 +517,59 @@ img {
   color: var(--white);
 }
 
+.subscribe {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.subscribe-input {
+  display: block;
+
+  width: 358px;
+  height: 50px;
+  padding: 15px;
+
+  color: var(--white);
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+.subscribe-input::placeholder {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe-container {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-submit {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+
+  min-width: 200px;
+  padding: 10px 28px;
+  border: none;
+
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+
+  border-radius: 4px;
+  background-color: var(--accent);
+  color: var(--white);
+}
+
+.tg {
+  display: inline;
+  width: 24px;
+  height: 24px;
+}
+
 /* portfolio page */
 
 /* radio buttons */
