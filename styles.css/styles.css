@@ -863,8 +863,9 @@ img {
 .form-input:hover,
 .form-input:focus,
 .form-comment:hover,
-.form-comment:focus-within {
+.form-comment:focus {
   border: 1px solid var(--accent);
+  outline: none;
 }
 
 .form-comment::placeholder {
@@ -872,8 +873,6 @@ img {
   letter-spacing: 0.01em;
 
   color: rgba(117, 117, 117, 0.5);
-
-  transition: border 250ms var(--cubic);
 }
 
 .form-comment {
@@ -886,6 +885,8 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
 
   resize: none;
+
+  transition: border 250ms var(--cubic);
 }
 
 .terms-link {
