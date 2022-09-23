@@ -862,6 +862,13 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
 }
 
+.form-input:hover,
+.form-input:focus,
+.form-comment:hover,
+.form-comment:focus-within {
+  outline: 1px solid var(--accent);
+}
+
 .form-comment::placeholder {
   font-size: 12px;
   letter-spacing: 0.01em;
@@ -908,6 +915,11 @@ img {
   cursor: pointer;
 }
 
+.form-input:hover + .form-icon,
+.form-input:focus + .form-icon {
+  fill: var(--accent);
+}
+
 .form-icon {
   position: absolute;
   top: 29px;
@@ -915,6 +927,8 @@ img {
 
   width: 18px;
   height: 18px;
+
+  pointer-events: none;
 
   fill: var(--black-text);
 }
@@ -924,6 +938,8 @@ img {
 
   display: inline-block;
   padding-left: 36px;
+
+  cursor: pointer;
 }
 
 .checkbox-icon {
@@ -934,4 +950,11 @@ img {
   width: 16px;
   height: 15px;
   margin-right: 8px;
+
+  background-image: url(../images/Vector.svg);
+  background-size: contain;
+}
+
+.checkbox:checked + .checkbox-icon {
+  background-image: url(../images/icon-check.svg);
 }
