@@ -809,8 +809,18 @@ img {
   appearance: none;
 }
 
+.close.btn:focus {
+  outline: none;
+}
+
+.close.btn:focus .icon.close {
+  outline: 2px solid var(--black);
+  border-radius: 2px;
+  fill: var(--accent);
+}
+
 .close:hover,
-.icon. close:focus {
+.icon.close:focus {
   fill: var(--accent);
 }
 
