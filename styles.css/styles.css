@@ -442,8 +442,12 @@ img {
 
 .footer.container {
   display: flex;
-  gap: 70px;
+
   align-items: baseline;
+}
+
+.footer-list {
+  margin-right: 70px;
 }
 
 .page-footer {
@@ -463,6 +467,10 @@ img {
   font-weight: 700;
 
   color: var(--white);
+}
+
+.footer-form {
+  margin-left: auto;
 }
 
 .footer-address {
@@ -557,6 +565,8 @@ img {
   border-radius: 4px;
   background-color: var(--accent);
   color: var(--white);
+
+  cursor: pointer;
 }
 
 .tg {
@@ -581,7 +591,7 @@ img {
   border-radius: 4px;
 
   color: var(--black-text);
-  background-color: var(--grey);
+  background-color: var(--grey-button);
   border: none;
 
   font-family: var(--main-font);
@@ -786,7 +796,7 @@ img {
   opacity: 0;
 }
 
-.close {
+.close-btn {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -794,25 +804,21 @@ img {
   width: 30px;
   height: 30px;
 
+  background-color: transparent;
+  border: none;
+
   cursor: pointer;
 }
 
-.close.btn {
-  background-color: transparent;
-  border: none;
-  appearance: none;
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 30px;
+  height: 30px;
 
   transition: fill 250ms var(--cubic);
-}
-
-.close.btn:focus {
-  outline: none;
-}
-
-.close.btn:focus .icon.close {
-  outline: 2px solid var(--black);
-  border-radius: 2px;
-  fill: var(--accent);
 }
 
 .close:hover,
@@ -835,6 +841,8 @@ img {
 
 .form-field {
   position: relative;
+
+  margin-bottom: 10px;
 }
 
 .form-label {
@@ -849,7 +857,6 @@ img {
 .form-input {
   display: block;
 
-  margin-bottom: 10px;
   padding: 12px 42px;
   width: 100%;
   height: 40px;
